@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Yudanta Ina Putra's Portfolio</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boootstrap Portfolio/Resume Theme for Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="desktop.ico">  
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
+    <!-- github activity css -->    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    
+</head> 
+
+<body>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container clearfix">
+            <img class="profile-image img-fluid float-left rounded-circle" src="assets/images/me.png" alt="profile image" />
+            <div class="profile-content float-left">
+                <h1 class="name">Yudanta Ina Putra</h1>
+                <h2 class="desc">Embedded, Robotics Engineer | Robotics, Computer Vision, Autonomous Systems Enthusiast</h2>
+                <ul class="social list-inline">
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/yudanta-ina-putra/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul> 
+            </div><!--//profile-->
+            <a class="btn btn-cta-primary float-right" href="https://www.linkedin.com/in/yudanta-ina-putra/" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>              
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-lg-8 col-12">
+                <section class="about section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <p>I am an electrical engineer graduate with a focus on embedded and robotics. Like to develop and prototyping something (firmware and software programming, mechanical design).</p>
+                            <p>Continuously self development by learn from books, courses and websites. Have work experience on robotics, computer vision, firmware development, and deep learning.</p>
+                            <p>I am self-driven person, detail oriented, and can work under pressure.</p>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+    
+               <section class="latest section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Projects</h2>
+                        <div class="content">    
+                                               
+                            <div class="item featured text-center">
+                                <div class="featured-image has-ribbon">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Robot 2.jpg" alt="project name"/>
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Robot arm.jpg" alt="project name" />
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Deteksi objek.png" alt="project name" width="500" height="390" />
+                                    </a>
+                                    <div class="ribbon">
+                                    </div>
+                                </div>
+                                <h3 class="title mb-3"><a>Search And Rescue (SAR) Robot</a></h3>
+                                <div class="desc text-left">      
+                                    <p>This robot based on EILERO (SAR robot from PENS) which I developed by adding computer vision features and a 4 DOF (Degree Of Freedom) robotic arm.</p>
+                                    <p>Uses 3 types of controllers: Arduino Pro Mini for angle reading via IMU sensor, STM32F4 which access other sensor and control robot actuator, and Jetson Nano to detect objects via camera.</p>
+                                    <p>I created autonomous systems algorithm for robot actions, and also object detection algorithm using YOLO (CNN object detection) that uses a model trained with custom objects + image sharpening algorithm (gaussian filter + unsharp masking) to detect and identify custom object for the robot competition.</p>
+                                    <p>Paper : <a class="more-link" href="https://ieeexplore.ieee.org/document/10052838" target="_blank"><i class="fas fa-external-link-alt"></i>https://ieeexplore.ieee.org/document/10052838</a></p>      
+                                    <p>Video : <a class="more-link" href="https://www.youtube.com/watch?v=iH--epqtv4M&list=PL5sedqsi7j6sftisw46E4YcLGHVWaTilI&index=4" target="_blank"><i class="fas fa-external-link-alt"></i>https://www.youtube.com/watch?v=iH--epqtv4M&list=PL5sedqsi7j6sftisw46E4YcLGHVWaTilI&index=4</a></p>      
+                                </div> <!--//desc-->  
+                            </div><!--//item-->
+
+                            <hr class="divider" />
+                            <div class="item featured text-center">
+                                <div class="featured-image has-ribbon">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Robot Thermal.jpg" alt="project name"/>
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Robot Lilin.jpg" alt="project name"/>
+                                    </a>
+                                    <div class="ribbon">
+                                    </div>
+                                </div>
+                                <h3 class="title mb-3"><a>Firefighting Robot</a></h3>
+                                <div class="desc text-left">      
+                                    <p>This is the prototype of four legged robot. I added array thermal sensor and mini water pump for robot, and also algorithm to make robots able to extinguish fires automatically.</p>                                
+                                    <p>Video : <a class="more-link" href="https://drive.google.com/drive/folders/16YPxv17jMVwwcAVufPy0ulbTghxcUb86" target="_blank"><i class="fas fa-external-link-alt"></i>https://drive.google.com/drive/folders/16YPxv17jMVwwcAVufPy0ulbTghxcUb86</a></p>      
+                                </div> <!--//desc-->  
+                            </div><!--//item-->
+
+                            <hr class="divider" />
+                            <div class="item featured text-center">
+                                <div class="featured-image has-ribbon">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Arm 4 DOF.jpg" alt="project name" width="500" height="390"/>
+                                    </a>
+                                    <div class="ribbon">
+                                    </div>
+                                </div>
+                                <h3 class="title mb-3"><a>Simple 4 DOF Robotic Arm</a></h3>
+                                <div class="desc text-left">             
+                                    <p>This is simple robotic arm that has 4 DOF (Degree Of Freedom). Use Arduino UNO for the microcontroller, this robotic arm can be moved manually or with inverse kinematic.</p>
+                                </div> <!--//desc-->  
+                            </div><!--//item-->
+                                
+                            <hr class="divider" />
+                            <div class="item featured text-center">
+                                <div class="featured-image has-ribbon">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Ping Pong Game.png" alt="project name" />
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Ping Pong Demo.png" alt="project name" />
+                                    </a>
+                                    <div class="ribbon">
+                                    </div>
+                                </div>
+                                <h3 class="title mb-3"><a>Computer Vision Ping-Pong Game</a></h3>
+                                <div class="desc text-left">
+                                    <p>This is the ping-pong game which can be play by using hands movements.</p>                       
+                                    <p> The program will capture image from webcam and it will processed to detect the position of hands. The coordinate from hands will be used to move the ping-pong bat.</p>
+                                    <p>Video : <a class="more-link" href="https://www.youtube.com/watch?v=NH_hr5Onnk4&list=LL" target="_blank"><i class="fas fa-external-link-alt"></i>https://www.youtube.com/watch?v=NH_hr5Onnk4&list=LL</a></p>      
+                                </div> <!--//desc-->  
+                            </div><!--//item-->
+
+                            <hr class="divider" />
+                            <div class="item featured text-center">
+                                <div class="featured-image has-ribbon">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Epson Printer.jpg" alt="project name"/></a>
+                                    <div class="ribbon">
+                                    </div>
+                                </div>
+                                <h3 class="title mb-3"><a>EPSON Printer</a></h3>
+                                <div class="desc text-left">
+                                    <p class="mb-2">This is some of my work with the team as Firmware Design Engineer on PT. Indonesia Epson Industry.</p>
+                                    <p class="mb-2">I responsible to develop the mechanical sequence of printer. Including motor drive, sensor reading, and printer sequences control. For example head movement, paper feeding, paper ejection, stacker opening, sensor reading, etc.</p>
+                                    <p class="mb-2">Since 2023, I already develop around 8 type of printer with the team.</p>
+                                </div><!--//desc-->  
+                            </div><!--//item-->                        
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                
+                <section class="awards section">
+                    <div class="section-inner shadow-sm rounded">
+                    <div class="content">
+                        <h2 class="heading">Honors & Awards</h2>
+                            <div class="item featured text-center">
+                                <div class="featured-image has-ribbon">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/KRI 2022 Nasional.jpeg" alt="project name" />
+                                    </a>
+                                    <div class="ribbon">
+                                    </div>
+                                </div>
+                                <h3 class="title mb-3">1st Place and Best Strategy in Indonesian Search And Rescue Robot Contest National 2022</h3>
+                            </div>
+
+                            <div class="item featured text-center">
+                                <div class="featured-image has-ribbon">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/KRI 2022 Regional.jpg" alt="project name" />
+                                    </a>
+                                    <div class="ribbon">
+                                    </div>
+                                </div>
+                                <h3 class="title mb-3">1st Place in Indonesian Search And Rescue Robot Contest Region II 2022</h3>
+                            </div>
+
+                            <div class="item featured text-center">
+                                <div class="featured-image has-ribbon">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/KRI 2020 Nasional.jpeg" alt="project name" />
+                                    </a>
+                                    <div class="ribbon">
+                                    </div>
+                                </div>
+                                <h3 class="title mb-3">1st Place and Best Design in Indonesian Firefighting Robot Contest National 2020</h3>
+                            </div>
+
+                            <div class="item featured text-center">
+                                <div class="featured-image has-ribbon">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/KRI 2020 Regional.jpg" alt="project name" />
+                                    </a>
+                                    <div class="ribbon">
+                                    </div>
+                                </div>
+                                <h3 class="title mb-3">3rd Place in Indonesian Firefighting Robot Contest Region II 2020</h3>
+                            </div>
+
+                            <div class="item featured text-center">
+                                <div class="featured-image has-ribbon">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/5th ISRITI 2022.png" alt="project name" />
+                                    </a>
+                                    <div class="ribbon">
+                                    </div>
+                                </div>
+                                <h3 class="title mb-3">Presenter and Author of 5th ISRITI 2022</h3>
+                            </div>
+                        </div><!--//content--> 
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+
+                <section class="experience section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Firmware Design Engineer - <span class="place"><a href="http://epson.co.id/" target="_blank">PT Indonesia Epson Industry</a></span> <span class="year">(March 2023 - Present)</span></h3>
+                                <p>Develop the firmware for the printer manufactured by EPSON</p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Embedded and IoT Engineer - <span class="place"><a href="https://www.linkedin.com/company/tanam-kota/posts/?feedView=all" target="_blank">Tanam Kota</a></span> <span class="year">(November 2022 - January 2023)</span></h3>
+                                <p>Developing an IoT-based automatic watering device</p>
+                            </div><!--//item-->
+                            
+                            <div class="item">
+                                <h3 class="title">Robotic Engineer - <span class="place"><a href="https://www.instagram.com/pens_robotics_team/" target="_blank">PENS Robotics Team</a></span> <span class="year">(November 2019 - July 2022)</span></h3>
+                                <p>Developing autonomous SAR robot to participate in the KRSRI (Kontes Robot SAR Indonesia)</p>
+                            </div><!--//item-->
+                        </div><!--//content--> 
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+            </div><!--//primary-->
+
+            <div class="secondary col-lg-4 col-12">
+                 <aside class="info aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Bekasi, West Java, Indonesia</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="mailto:yudantainaputra95@gmail.com">yudantainaputra95@gmail.com</a></li>
+                            </ul>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//aside-->
+                
+                <aside class="skills aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Skills</h2>
+                        <div class="content">
+                            
+                            <ul class="list-styled">
+                                
+					    
+				<li class="item">
+                                    <span class="level">PCB schematic and board design using</span>
+                                    <span class="title"><strong>EAGLE</strong></span>
+                                </li><!--//item-->
+        
+                <li class="item">
+                                    <span class="level">Programming language using</span>
+                                    <span class="title"><strong>C, C++, and Python</strong></span>
+                                </li><!--//item-->
+        
+                <li class="item">
+                                    <span class="level">Basic 3D Design using</span>
+                                    <span class="title"><strong>SOLIDWORKS</strong></span>
+                                </li><!--//item-->
+        
+                <li class="item">
+                                    <span class="title"><strong>PLC Programming</strong></span>
+                                </li><!--//item-->
+
+				<li class="item">
+                                    <span class="title"><strong>RTOS programming</strong></span>
+                                </li><!--//item-->
+
+				<li class="item">
+                                    <span class="title"><strong>ROS programming</strong></span>
+                                </li><!--//item-->
+					    
+				<li class="item">
+                                    <span class="level">Have experience on</span>
+                                    <span class="title"><strong>Robotics</strong></span>
+                                </li><!--//item-->
+					    
+				<li class="item">
+                                    <span class="level">Have experience on</span>
+                                    <span class="title"><strong>Computer Vision (OpenCV, YOLO)</strong></span>
+                                </li><!--//item-->
+                
+                <li class="item">
+                                    <span class="level">Have experience on</span>
+                                    <span class="title"><strong>Deep learning (Darknet Frameworks)</strong></span>
+                                </li><!--//item-->
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+		    
+                <aside class="education aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Bachelor's Degree</h3>
+                                <h4 class="university">Politeknik Elektronika Negeri Surabaya <span class="year">(2022-2023)</span> <span class="gpa">GPA: 3.59/4.00</span></h4>
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Associate Degree</h3>
+                                <h4 class="university">Politeknik Elektronika Negeri Surabaya <span class="year">(2018-2021)</span> <span class="gpa">GPA: 3.33/4.00</span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+            </div><!--//secondary-->    
+        </div><!--//row-->
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>            
+</body>
+</html> 

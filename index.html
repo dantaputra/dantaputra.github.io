@@ -53,9 +53,9 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
-                            <p>I am an electrical engineer graduate with a focus on embedded and robotics. Like to develop and prototyping something (firmware and software programming, mechanical design).</p>
+                            <p>I am an electrical engineer with interest on embedded system, robotics, computer vision, and AI. Have done some real-world project involving hardware and mechanical design, and programming.</p>
                             <p>Continuously self development by learn from books, courses and websites. Have work experience on robotics, computer vision, firmware development, and deep learning.</p>
-                            <p>I am self-driven person, detail oriented, and can work under pressure.</p>
+                            <p>I am self-driven person, detail oriented, can work in a team, and can work under pressure.</p>
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
@@ -75,10 +75,10 @@
                                     </div>
                                 </div>
                                 <h3 class="title mb-3"><a>Search And Rescue (SAR) Robot</a></h3>
-                                <div class="desc text-left">      
-                                    <p>This robot based on EILERO (SAR robot from PENS) which I developed by adding computer vision features and a 4 DOF (Degree Of Freedom) robotic arm.</p>
-                                    <p>Uses 3 types of controllers: Arduino Pro Mini for angle reading via IMU sensor, STM32F4 which access other sensor and control robot actuator, and Jetson Nano to detect objects via camera.</p>
-                                    <p>I created autonomous systems algorithm for robot actions, and also object detection algorithm using YOLO (CNN object detection) that uses a model trained with custom objects + image sharpening algorithm (gaussian filter + unsharp masking) to detect and identify custom object for the robot competition.</p>
+                                <div class="desc text-left">
+                                    <p>This robot based on EILERO (SAR robot from PENS) which I developed by adding computer vision features and a 4-DoF (Degree of Freedom) robotic arm.</p>
+                                    <p>Uses 3 types of controllers: Arduino Pro Mini for angle reading via IMU sensor, STM32F4 to access LiDAR and control servo, and Jetson Nano to detect objects via camera.</p>
+                                    <p>I work on created object detection algorithm using YOLO (CNN object detection) that uses a model trained with custom objects + image sharpening algorithm (gaussian filter + unsharp masking) to detect and identify custom object for the robot competition.</p>
                                     <p>Paper : <a class="more-link" href="https://ieeexplore.ieee.org/document/10052838" target="_blank"><i class="fas fa-external-link-alt"></i>https://ieeexplore.ieee.org/document/10052838</a></p>      
                                     <p>Video : <a class="more-link" href="https://www.youtube.com/watch?v=iH--epqtv4M&list=PL5sedqsi7j6sftisw46E4YcLGHVWaTilI&index=4" target="_blank"><i class="fas fa-external-link-alt"></i>https://www.youtube.com/watch?v=iH--epqtv4M&list=PL5sedqsi7j6sftisw46E4YcLGHVWaTilI&index=4</a></p>      
                                 </div> <!--//desc-->  
@@ -95,7 +95,8 @@
                                 </div>
                                 <h3 class="title mb-3"><a>Firefighting Robot</a></h3>
                                 <div class="desc text-left">      
-                                    <p>This is the prototype of four legged robot. I added array thermal sensor and mini water pump for robot, and also algorithm to make robots able to extinguish fires automatically.</p>                                
+                                    <p>This is the prototype of four legged robot based on EILERO firefighting robot from PENS, but with low cost hardware. I added infrared array thermal sensor to detect and locate the fire location.
+                                       The fire will be extinguished using mini water pump that installed on robot. Beside that, I also develop the algorithm to explore the arena autonomously by using ToF sensor.</p>                                
                                     <p>Video : <a class="more-link" href="https://drive.google.com/file/d/1z82vhEad0D79NBCFBJElVe_uCE_aZm_f/view?usp=sharing" target="_blank"><i class="fas fa-external-link-alt"></i>https://drive.google.com/file/d/1z82vhEad0D79NBCFBJElVe_uCE_aZm_f/view?usp=sharing</a></p>
                                 </div> <!--//desc-->  
                             </div><!--//item-->
@@ -111,8 +112,8 @@
                                 </div>
                                 <h3 class="title mb-3"><a>Pick and Place Cartesian Robot</a></h3>
                                 <div class="desc text-left">      
-                                    <p>This is Pick and Place machine, the cartesian robot which is in charge of pick and place SMD component to a PCB board. This robot move on XYZ Axis and have pneumatic system to suck and blow components through a vacuum.</p>
-                                    <p>This machine develop base from Marlin firmware (3D printer firmware) with some addition and modification to the function. Have a 2 camera on top (Head) and bottom for calibration and object detection. This machine use STM32F103C8T6 as the microcontroller, and can assembly SMD component precise and smoothly.</p>
+                                    <p>This is Pick and Place machine, the cartesian robot which is in charge of pick and place SMD component to a PCB board. This robot move linear on XYZ Axis and also rotate on C1 and C2 axis (nozzle rotation). Besides that, this machine have pneumatic system to suck and blow components through a vacuum.</p>
+                                    <p>This machine develop based on Marlin firmware (3D printer firmware) with some addition and modification to the function. Have a 2 camera on top (Head) and bottom for calibration and object detection. This machine use STM32F103C8T6 as the microcontroller, and can assembly SMD component precise and smoothly.</p>
                                     <p>I develop the full aspect of machine. From PCB design, 3D mechanical design, pneumatic system, firmware modification, to software configuration and tuning.</p>
                                     <p>Video : <a class="more-link" href="https://drive.google.com/file/d/1iGk0jneZP4k3A1bCR7IerbBlUSPG5qpL/view?usp=sharing" target="_blank"><i class="fas fa-external-link-alt"></i>https://drive.google.com/file/d/1iGk0jneZP4k3A1bCR7IerbBlUSPG5qpL/view?usp=sharing</a></p>
                                 </div> <!--//desc-->  
@@ -128,7 +129,7 @@
                                 </div>
                                 <h3 class="title mb-3"><a>Simple 4 DOF Robotic Arm</a></h3>
                                 <div class="desc text-left">             
-                                    <p>This is simple robotic arm that has 4 DOF (Degree Of Freedom). Use Arduino UNO for the microcontroller, this robotic arm can be moved manually or with inverse kinematic.</p>
+                                    <p>This is simple robotic arm that has 4 DOF (Degree Of Freedom). Developed by using Arduino UNO for the microcontroller and C programming language, this robotic arm can be moved manually or with inverse kinematic.</p>
                                 </div> <!--//desc-->  
                             </div><!--//item-->
                                 
@@ -143,8 +144,8 @@
                                 </div>
                                 <h3 class="title mb-3"><a>Computer Vision Ping-Pong Game</a></h3>
                                 <div class="desc text-left">
-                                    <p>This is the ping-pong game which can be play by using hands movements.</p>                       
-                                    <p> The program will capture image from webcam and it will processed to detect the position of hands. The coordinate from hands will be used to move the ping-pong bat.</p>
+                                    <p>This is the ping-pong game which can be play by using computer and webcam.</p>                       
+                                    <p> The program will capture image from webcam and it will processed the image to detect the position of hands. The coordinate from hands will be used to move the ping-pong bat.</p>
                                     <p>Video : <a class="more-link" href="https://www.youtube.com/watch?v=NH_hr5Onnk4&list=LL" target="_blank"><i class="fas fa-external-link-alt"></i>https://www.youtube.com/watch?v=NH_hr5Onnk4&list=LL</a></p>      
                                 </div> <!--//desc-->  
                             </div><!--//item-->                     
@@ -156,6 +157,15 @@
                     <div class="section-inner shadow-sm rounded">
                     <div class="content">
                         <h2 class="heading">Honors & Awards</h2>
+                           <div class="item featured text-center">
+                                <div class="featured-image has-ribbon">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/5th ISRITI 2022.png" alt="project name" />
+                                    </a>
+                                    <div class="ribbon">
+                                    </div>
+                                </div>
+                                <h3 class="title mb-3">Presenter and Author of 5th ISRITI 2022</h3>
+                            </div>
                             <div class="item featured text-center">
                                 <div class="featured-image has-ribbon">
                                     <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/KRI 2022 Nasional.jpeg" alt="project name" />
@@ -195,16 +205,6 @@
                                 </div>
                                 <h3 class="title mb-3">3rd Place in Indonesian Firefighting Robot Contest Region II 2020</h3>
                             </div>
-
-                            <div class="item featured text-center">
-                                <div class="featured-image has-ribbon">
-                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/5th ISRITI 2022.png" alt="project name" />
-                                    </a>
-                                    <div class="ribbon">
-                                    </div>
-                                </div>
-                                <h3 class="title mb-3">Presenter and Author of 5th ISRITI 2022</h3>
-                            </div>
                         </div><!--//content--> 
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
@@ -228,7 +228,7 @@
                             
                             <div class="item">
                                 <h3 class="title">Robotic Engineer - <span class="place"><a href="https://www.instagram.com/pens_robotics_team/" target="_blank">PENS Robotics Team</a></span> <span class="year">(November 2019 - July 2022)</span></h3>
-                                <p>Developing autonomous SAR robot to participate in the KRSRI (Kontes Robot SAR Indonesia)</p>
+                                <p>Developing autonomous SAR robot to participate in the KRSRI (Kontes Robot SAR Indonesia) or KRPAI (Kontes Robot Pemadam Api Indonesia)</p>
                             </div><!--//item-->
                         </div><!--//content--> 
                     </div><!--//section-inner-->                 
@@ -248,47 +248,10 @@
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </aside><!--//aside-->
-                
-                <aside class="skills aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Technical Skills</h2>
-                        <div class="content">
-                            <ul class="list-styled">
-                                <li class="item">
-                                    <span class="level">PCB Design</span>
-                                </li><!--//item-->
-
-                                <li class="item">
-                                    <span class="level">3D Mechanical Design</span>
-                                </li><!--//item-->
-
-                                <li class="item">
-                                    <span class="level">Programming (C++ and Python)</span>
-                                </li><!--//item-->
-
-				                <li class="item">
-                                    <span class="title">Computer Vision</span>
-                                </li><!--//item-->
-
-				                <li class="item">
-                                    <span class="title">Deep Learning</span>
-                                </li><!--//item-->
-                
-                                <li class="item">
-                                    <span class="level">Internet of Things</span>
-                                </li><!--//item-->
-
-                                <li class="item">
-                                    <span class="level">Robot simulation</span>
-                                </li><!--//item-->
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
 		    
                 <aside class="tools aside section">
                     <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Tools</h2>
+                        <h2 class="heading">Technical Skills</h2>
                         <div class="content">
 
                         <style>
@@ -318,8 +281,8 @@
                                 </li><!--//item-->
 
                                 <li class="item">
-                                    <span class="level">Programming IDE</span>
-                                    <span class="title"><strong>: Arduino IDE, STM32CubeIDE, Visual Studio</strong></span>
+                                    <span class="level">Programming Language</span>
+                                    <span class="title"><strong>: C/C++, Python</strong></span>
                                 </li><!--//item-->
 
                                 <li class="item">
@@ -333,8 +296,8 @@
                                 </li><!--//item-->
 
                                 <li class="item">
-                                    <span class="level">Containerization</span>
-                                    <span class="title"><strong>: Docker</strong></span>
+                                    <span class="level">Tools & Libraries</span>
+                                    <span class="title"><strong>: Git, Docker, Tensorflow, Numpy, Pandas</strong></span>
                                 </li><!--//item-->
 
                             </ul>
